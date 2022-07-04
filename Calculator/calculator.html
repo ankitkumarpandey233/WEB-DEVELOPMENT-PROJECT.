@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script src="https://kit.fontawesome.com/85c7159dfc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator style .css" />
+</head>
+<body>
+    <div>
+        <h1>Calculator Using HTML And CSS</h1>
+        <br/><br/>
+        <h3><i class="fa-solid fa-user"></i>&nbsp;Made By Ankit Kumar Pandey.</h3>
+        <br/>
+        <h3><i class="fa-solid fa-phone"></i>&nbsp;Contact No-9304049220.</h3>
+        <br/>
+        <a href="https://www.linkedin.com/in/ankit-kumar-pandey-78354622b/" target="_blank">
+            <h3>
+                <i class="fa-brands fa-linkedin"></i> &nbsp;Connect Me On Linkedin
+            </h3>
+        </a><br/>
+        <a href="mailto:pandeyjee2310@gmail.com" target="_blank">
+            <h3>
+                <i class="fa-solid fa-envelope"></i>&nbsp;Give Your Feedback On Mail
+            </h3>
+            <br/>
+        </a>
+    </div>
+    <div class="container">
+        <form action="#" name="forms">
+            <input type="text" name="answer" />
+            <div class="buttons">
+                <input type="button" value="AC" onclick="forms.answer.value = ''" />
+                <input type="button" value="DEL"
+                    onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)" />
+                <input type="button" value="%" onclick="forms.answer.value += '%'" />
+                <input type="button" value="/" onclick="forms.answer.value += '/'" />
+            </div>
+            <div class="buttons">
+                <input type="button" value="7" onclick="forms.answer.value += '7'" />
+                <input type="button" value="8" onclick="forms.answer.value += '8'" />
+                <input type="button" value="9" onclick="forms.answer.value += '9'" />
+                <input type="button" value="*" onclick="forms.answer.value += '*'" />
+            </div>
+            <div class="buttons">
+                <input type="button" value="4" onclick="forms.answer.value += '4'" />
+                <input type="button" value="5" onclick="forms.answer.value += '5'" />
+                <input type="button" value="6" onclick="forms.answer.value += '6'" />
+                <input type="button" value="-" onclick="forms.answer.value += '-'" />
+            </div>
+            <div class="buttons">
+                <input type="button" value="1" onclick="forms.answer.value += '1'" />
+                <input type="button" value="2" onclick="forms.answer.value += '2'" />
+                <input type="button" value="3" onclick="forms.answer.value += '3'" />
+                <input type="button" value="+" onclick="forms.answer.value += '+'" />
+            </div>
+            <div class="buttons">
+                <input type="button" value="0" onclick="forms.answer.value += '0'" />
+                <input type="button" value="00" onclick="forms.answer.value += '00'" />
+                <input type="button" value="." onclick="forms.answer.value += '.'" />
+                <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
