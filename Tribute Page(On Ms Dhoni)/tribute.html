@@ -1,0 +1,221 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tribute Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet" />
+  <link href="tribute.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Ms.Dhoni</h1>
+    <p>A Captain Of Captains</p>
+    <div class="slideshow-container">
+<h5>A Tribute to Greatest Captain Ever By Ankit Kumar Pandey</h5>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/4.jpg">
+        <div class="text">PARWAH NAHIN
+          (Song by Amaal Mallik and Siddharth Basrur)
+          </div>
+        <audio controls autoplay muted >
+          <source src="audio/parwah.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/2.jpg">
+        <div class="text">Ziddi Dil
+          (Song by Vishal Dadlani)</div>
+        <audio controls autoplay muted >
+          <source src="audio/ziddi dil.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/1.jpg">
+        <div class="text">India Waale
+          (Song by Shankar Mahadevan and Neeti Mohan)</div>
+        <audio controls autoplay muted >
+          <source src="audio/indiawale.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/3.jpg">
+        <div class="text">BESABRIYAAN
+          (Song by Amaal Mallik and Armaan Malik)
+          </div>
+        <audio controls autoplay muted >
+          <source src="audio/besabriyaan.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/5.jpg">
+        <div class="text">Toofan
+          (Song by Ravi Basrur)
+          </div>
+        <audio controls autoplay muted >
+          <source src="audio/toofan.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <br />
+    <section id="tribute-info">
+      <h2>Short Bio</h2>
+      <blockquote cite="https://www.brainyquote.com/quotes/ms_dhoni_797562">
+        "<span>Winning the World Cup</span> was very special because it meant so much to so many. One thing about our
+        country that is constant is cricket. The smile it brought to people's faces was the thing I shall always
+        remember. It reminded me, reminded all of us, of our importance to the lives of the Indian people less lucky
+        than we are"
+      </blockquote>
+      <p class="center">
+        <strong>Mahendra Singh Dhoni</strong> or as he is commonly known as <strong>MS Dhoni</strong> is an Indian
+        cricketer who represents India on the International stage. On the domestic level, Dhoni plays first-class
+        cricket for Jharkhand.
+        <br /><br />
+        In 1995, he joined the Commando cricket club and stood behind the stumps for them for the next three years. He
+        was then picked for the Vinoo Mankad Trophy Under-16 Championship in the 1997/98 season and performed well.
+        In 1998, Dhoni started to play for the Central Coal Fields Limited (CCL) team. During his time at the CCL, Deval
+        Sahay would gift him fifty rupees for every 6 that he scored in Sheesh Mahal tournament cricket games. Sahay
+        then pushed for Dhoni’s selection in the Bihar team.
+        <br /><br />
+        <span class="high">IPL Career</span>
+        <br /><br />
+        Dhoni’s services were contracted by the Chennai Super Kings for US$1.5 million in IPL’s inaugural season in
+        2008. He was the most expensive player in the IPL for the first season auctions. Dhoni captained Chennai Super
+        Kings to victory in 2010 and 2011, 2018 and 2021 Indian Premier League titles and the 2010 and 2014 Champions
+        League T20 titles.
+        After the CSK was banned for two years, Dhoni was subsequently bought by Rising Pune Supergiant for US$1.9
+        Million in 2016. He was the captain that year but after his team finished in 7th place he was replaced by Steven
+        Smith.
+        MS Dhoni’s CSK reached the final for a record 8th time in 2019 but was stopped by a resurgent Mumbai Indians
+        side which won the final by a whisker.
+        Under MS Dhoni’s captaincy, in IPL 2021 final CSK beats KKR by 27 runs and won the trophy for the fourth time.
+        <br /><br />
+        <span class="high">ODI Career</span>
+        <br /><br />
+        Dhoni arrived on the international stage when the Indian ODI team was struggling to find it’s
+        Wicketkeeper-Batsman. We saw Rahul Dravid in the 2000s and then the arrival of wicket-keeper/batsman from the
+        junior ranks such as Parthiv Patel and Dinesh Karthik.
+
+        But they didn’t fit the team combination well. Then came in Dhoni, who was picked for the ODI squad for the
+        Bangladesh tour in 2004/05.
+        Dhoni had the most disastrous start to a career which anyone can ever ask for. Getting run out for a duck on
+        debut is the last thing you want. But, despite ordinary performances in his inaugural series against the
+        Bangladesh cricket team, Dhoni was selected for the series against Pakistan. ‘
+
+        Dhoni scored his first century in his fifth one-day international. He scored 148 in Visakhapatnam off only 123
+        deliveries. And thus began the Dhoni era.
+
+        His last ODI inning came against New Zealand in the 2019 WC Semifinal where he ended his ODI journey in the same
+        way he started–with a runout. Although there were speculations that MSD will stage a comeback after the 2020
+        IPL, the unforeseeable circumstances due to COVID-19 ensured that MS Dhoni played his <strong> last
+          international game without any farewell.</strong>
+
+        <br /><br />
+        <span class="high">MS DHONI RECORDS</span> <br /><br />
+        <strong>Tests</strong>
+        <br /><br />
+        Dhoni remains the most successful Indian Test captain with 27 Test wins.<br>
+        He is the first Indian wicket-keeper to score 4,000 test runs.<br>
+        Dhoni’s 224 against Australia is the third-highest score by an Indian captain, highest Test score by an Indian
+        wicket-keeper, and the highest score by a wicket-keeper–captain.<br>
+        Dhoni’s century against Pakistan (148) is the fastest century scored by an Indian wicket-keeper and fourth
+        overall.<br>
+        With 294 dismissals in his career, Dhoni tops the all-time dismissals list by Indian wicket-keepers.<br>
+        Dhoni has the most stumpings (38) to his name by any wicket-keeper in tests.<br>
+        He holds the record for most scalps in an innings (6) and in a match (9) by an Indian wicket-keeper.<br>
+        Dhoni is the third captain overall to win 100 games.<br>
+        <br /><br />
+        <strong>ODI and T20I</strong>
+        <br /><br />
+      <p class="left">
+        MS Dhoni is the fourth Indian to reach the 10,000 ODI runs milestone and only the second wicket-keeper to
+        achieve the feat.<br>
+        The first player to cross 10,000 runs in ODI cricket with a career average of over 50.<br>
+        Dhoni has the most number of career runs in ODI batting at number 6.<br>
+        The only player to score a century in ODI cricket when batting at number 7 or lower<br>
+        Most not-outs (82) in ODIs.<br>
+        First Indian and fifth overall to hit 200 sixes in ODIs<br>
+        Dhoni’s 183* against Sri Lanka in 2005 is the highest score by a wicket-keeper.<br>
+        MSD’s 113 against Pakistan in Chennai in 2012 is the highest by a captain batting at number 7<br>
+        India’s highest eighth-wicket partnership in ODIs with Bhuvneshwar Kumar<br>
+        MSD has the record for playing the most matches in ODI history as the captain while also servings as a
+        wicket-keeper (200).<br>
+        Most dismissals in an innings (6) and career (432) by an Indian wicket-keeper.<br>
+        Dhoni has managed to have the most stumpings (120) by any wicket-keeper in an ODI career<br>
+        First Indian wicket-keeper to have the distinction of taking 300 ODI catches and fourth wicket-keeper overall in
+        the world to achieve the feat.<br>
+        Dhoni has the most wins in T20Is as captain<br>
+        He also has played the most matches as captain in T20Is<br>
+        MSD has the played the most matches in T20 International history as both captain and wicket-keeper
+        Most consecutive T20I innings without a duck (84)<br>
+        Dhoni holds the record for featuring in the most T20I innings (76) and scored the most runs (1,153) before
+        scoring a fifty.<br>
+        Most dismissals as wicket-keeper in T20Is (87)<br>
+        He has most catches as wicket-keeper in T20Is (54)<br>
+        Dhoni has the most stumpings as wicket-keeper in T20Is (33)<br>
+        Most catches as keeper in a T20I innings<br>
+      </p>
+      <br /><br />
+      <span class="high">MS DHONI AWARDS</span> <br /><br />
+      2018: Padma Bhushan, India’s third-highest civilian award.<br>
+      2009: Padma Shri, India’s fourth-highest civilian award.<br>
+      2007−08: Rajiv Gandhi Khel Ratna, India’s highest honor.<br>
+      </p>
+      <blockquote>
+        “If you don’t really have a dream, you can’t really push yourself you don’t really know what the target is.” MS Dhoni
+      </blockquote>
+      <h3>
+        If you have time, then you should definitely watch about this
+        incredible cricketer on these videos.👇👇<br> <br> <br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/b4OH3vBANa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/OOd9Q13qWR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/WXt00UP3vIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/hUNAtr-xgyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/dIpaY_1aoUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </h3>
+    </section>
+  </main>
+</body>
+</html>
